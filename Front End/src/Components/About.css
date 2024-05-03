@@ -1,0 +1,33 @@
+.about-cs {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #fbfbfb; 
+    border: 1px solid #000000; 
+    border-radius: 5px; 
+  }
+  
+  
+  .about-cs p {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #000000; 
+  }
+  
+  
+  .about-cs p:first-child {
+    margin-top: 90px; 
+    margin-bottom: 10px;
+  }
+  .photo {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  width: 28vw;
+  height: 50vh;
+  margin-left: 0px;
+  background-image: url('D:\myapp\src\assets\aboutus.jpg');
+  background-size: cover;
+  background-position: center;
+}

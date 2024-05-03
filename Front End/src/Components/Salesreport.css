@@ -1,0 +1,526 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(65,131,155,1) 0%,rgba(51,98,123,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+*{
+  box-sizing: border-box;
+}
+#container {
+  display: table;
+  width: 1200px;
+  background: #202b33;
+  margin: 60px auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+Side Bar */
+#sideMenu {
+  width: 240px;
+  height: 100%;
+  padding: 30px;
+  border-right: 1px solid #111;
+  display: table-cell;
+  vertical-align: top;
+  color: #fff;
+}
+ .menu {
+  list-style: none;
+  margin:  24px 0;
+  padding: 0;
+} 
+.menu li {
+  display: block;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .6);
+  position: relative;
+}
+.menu li:hover {
+  color: #239ae3;
+}
+.menu li:first-child {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.addCategory {
+  font-size: 13px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .2);
+}
+.addCategory:hover {
+  color: #fff;
+}
+
+/* Content */
+ #content {
+  width: calc(100% - 240px);
+  height: 100%;
+  padding: 25px;
+  display: table-cell;
+}
+#titleBar {
+  height: 36px;
+  margin-bottom: 30px;
+}
+#profilePic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #999;
+  float: right;
+  margin-top: -8px;
+  margin-left: 14px;
+  overflow: hidden;
+}
+#profilePic img {
+  width: 100%;
+}
+.controls {
+  display: block;
+  width: 70px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  float: right;
+  border-radius: 20px;
+}
+.activeControl {
+  background: rgba(255, 255, 255, 0.9);
+  color: #202b33;
+  font-weight: 600;
+}
+#salesData {
+  margin-bottom: 60px;
+}
+#totalSales {
+  height: 120px;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+#totalSales .col {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+#totalSales .col .progressTitle {
+  float: left;
+  margin-left: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+.progressBar {
+  float: left;
+  height: 120px;
+  width: 120px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+}
+
+/* Icons */
+.notification {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #202b33;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .6);
+  position: absolute;
+  top: 0; bottom: 0; right: 2%;
+  margin: auto;
+}
+.colorIcon {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; bottom: 0; right: 2%;
+  margin: auto;
+}
+.plus {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #202b33;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 8px;
+  padding: 4px;
+  margin-right: 6px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, .2);
+}
+.red {
+  background: #ec1561;
+}
+.orange {
+  background: #ff9939;
+}
+.green {
+  background: #2bab51;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 10px;
+  padding-bottom: 14px;
+}
+tr:not(:first-child):hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+td {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 10px;
+}
+/* Headers */
+h1 {
+  font-size: 13px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2 {
+  float: left;
+  font-size: 19px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 0;
+  color: rgba(255, 255, 255, .8);
+}
+h3 {
+  float: left;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 8%;
+  margin-left: 20px;
+  margin-bottom: 6px;
+}
+
+.clearFix {
+  clear: both;
+} 
+body {
+  background-color: #ffc1c1;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.frame {
+  background-color: #347abb;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 5px 5px 20px 0px #414141;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #ffffff;
+  width: 300px;
+  height: 220px;  
+  box-shadow: 6px 10px 14px 0px #414141;
+}
+
+/* header container */
+.header {
+  position: relative;
+  height: 40px;
+  background-color: #ffc400;
+  padding: 10px 16px;
+  color: #fdfdfd;
+}
+.title, .date, .type, .value {
+  position: absolute;
+}
+.title, .value {
+  font-size: 16px;
+  font-weight: 600;
+}
+.date, .type {
+  font-size: 12px;
+}
+.title {
+  top: 9px;
+}
+.date {
+  top: 29px;
+}
+.type {
+  top: 9px;
+  right: 19px;
+}
+.value {
+  top: 22px;
+  right: 19px
+}
+
+/* parameter container */
+.parameter {
+  padding: 5px;
+  text-align: right;
+  font-size: 12px;
+  color: #555555;
+}
+.card .parameter span {
+  position: relative;
+  padding: 0 12px 0 25px;
+}
+.card .parameter span:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 10px;
+  height: 4px;
+}
+.card .parameter .red:before {
+  background-color: #ff8b8b;
+}
+.card .parameter .blue:before {
+  background-color: #8f83ff;
+}
+
+/* chart container */
+.chart {
+  position: relative;
+  margin: auto;
+  width: 265px;
+  height: 100px;
+  background-color: rgb(247, 247, 247);  
+}
+.line1, .line2, .line3 {
+  background-color: rgb(168, 168, 168);
+  position: absolute;
+  height: 1px; 
+  width: 100%;
+}
+.line1 {
+  top: 0%;
+}
+.line2 {
+  top: 50%;
+}
+.line3 {
+  top: 100%;
+}
+
+/* data container */
+.red-data, .blue-data {
+  position: absolute;
+}
+svg {
+  position: absolute;
+}
+svg .red-line {
+  fill: none;
+  stroke: #ff8b8b;
+  stroke-width: 2px;  
+}
+svg .blue-line {
+  fill: none;
+  stroke: #8f83ff;
+  stroke-width: 2px;
+}
+/* points and tooltips css */
+.red-point-1, .red-point-2, .red-point-3, .red-point-4, .red-point-5, .red-point-6, .red-point-7 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ff8b8b;
+  cursor: pointer;
+  z-index: 10;
+}  
+.red-point-1 {
+  left: 4px;
+  top: 56px;
+}
+.red-point-2 {
+  left: 42px;
+  top: 37px;
+}
+.red-point-3 {
+  left: 87px;
+  top: 54px;
+}
+.red-point-4 {
+  left: 127px;
+  top: 18px;
+}
+.red-point-5 {
+  left: 172px;
+  top: 47px;
+}
+.red-point-6 {
+  left: 217px;
+  top: 35px;
+}
+.red-point-7 {
+  left: 256px;
+  top: 56px;
+}
+.blue-point-1, .blue-point-2, .blue-point-3, .blue-point-4, .blue-point-5, .blue-point-6, .blue-point-7 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8f83ff;
+  cursor: pointer;
+} 
+.blue-point-1 {
+  left: 4px;
+  top: 84px;
+}
+.blue-point-2 {
+  left: 42px;
+  top: 67px;
+}
+.blue-point-3 {
+  left: 87px;
+  top: 87px;
+}
+.blue-point-4 {
+  left: 127px;
+  top: 74px;
+}
+.blue-point-5 {
+  left: 172px;
+  top: 85px;
+}
+.blue-point-6 {
+  left: 217px;
+  top: 61px;
+}
+.blue-point-7 {
+  left: 256px;
+  top: 78px;
+}
+/* tooltips css */
+.red-data .points .tooltip {
+  position: absolute;
+  left: -14px;
+  bottom: 7px;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: #ff8b8b;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fdfdfd;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.red-data .points .point:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+.red-data .points .tooltip:before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  width: 0px;
+  height: 0px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 5px solid #ff8b8b;
+}
+
+.blue-data .points .tooltip {
+  position: absolute;
+  left: -9px;
+  bottom: 7px;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: #8f83ff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fdfdfd;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 11;
+}
+.blue-data .points .point:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+.blue-data .points .tooltip:before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 3px solid #8f83ff;
+}
+
+
+/*day container*/
+.days {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  top: 10px;
+}
+.days .day {
+  color: #555555;
+  display: block;
+  float: left;
+  width: calc(100% / 7);
+} 

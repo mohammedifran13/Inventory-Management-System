@@ -1,0 +1,178 @@
+.Billing {
+  height: 100vh;
+  text-align: center;
+  /* background-image: url("D:\web\src\assets\home2.avif"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  padding: 50px;
+}
+
+.billingform button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.billingform input {
+  margin: 10px;
+  padding: 10px;
+}
+
+.billingform button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.billing2 {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #050505;
+}
+
+.billing3  {
+  color:white;
+  background:transparent;
+}
+
+.billing4 tr:nth-child(even) {
+  color: white;;
+  background-color: #000000;
+}
+
+.billing4 td {
+  color: black;
+}
+
+.billing4 button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+  .billing-container-amount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billing-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+  margin-top: 50px;
+}
+
+.billing-container-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.billing-container-heading h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.billing-container-heading-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.billing-container-heading-body input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.billing-container-heading-body button[type="submit"] {
+  padding: 10px 20px;
+  background-color: red;
+  font-family: 'Lora', serif;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.billing-container-table {
+  overflow-x: auto;
+}
+
+.billing-container-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.billing-container-table th,
+.billing-container-table td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.billing-container-table th {
+  color: #fff;
+}
+
+.billing-container-table tbody tr:nth-child(even) {
+  background:transparent;
+}
+
+.billing-container-table tbody tr:hover {
+  background-color: grey;
+}
+
+.billing-container-table button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.billing_totals {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+}
+
+.billing_btn {
+  padding: 6px 30px;
+  border-radius: 10px;
+  border: none;
+}
+.billing_btn{
+  text-decoration: none;
+}
+
